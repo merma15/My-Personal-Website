@@ -6,6 +6,8 @@
 
 body {
    font-family: ubuntu, sans-serif;
+   width: 100%;
+   background-color: #1A1E23;
 }
 
 :root {
@@ -15,138 +17,14 @@ body {
    --White: #FFFFFF;
 }
 
-/*Styling Header Section*/
-.brand-heading {
-   display: flex;
-   padding: 0px 128px;
-   flex-direction: column;
-   align-items: center;
-   align-self: stretch;
-   background: var(--BG-1, #292F36);
-   height: 170px;
-}
-
-.header-container a:hover {
-   color: var(--Brand-1, #12F7D6);
-}
-
-.header-container a {
-   text-decoration: none;
-   color: #12F7D6;
-}
-
-.header-container {
-   display: flex;
-   padding: 32px 0px;
-   justify-content: space-between;
-   align-items: center;
-   align-self: stretch;
-
-}
-
-
-
-#brand-logo {
-   display: flex;
-   align-items: center;
-   gap: 8px;
-}
-
-#brand-logo h1 {
-   color: var(--Brand-1, #12F7D6);
-   font-size: 32px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 42px;
-   text-transform: capitalize;
-}
-
-#brand-logo h2 {
-   color: var(--White, #FFF);
-   font-size: 30px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 42px;
-   text-transform: capitalize;
-}
-
-.navbar-header {
-   display: flex;
-   align-items: center;
-   gap: 64px;
-}
-
-#left-navbar ul {
-   display: flex;
-   align-items: flex-start;
-   gap: 32px;
-}
-
-#left-navbar li {
-   list-style: none;
-}
-
-#left-navbar a {
-   color: var(--White, #FFF);
-   text-decoration: none;
-}
-
-#right-navbar {
-   display: flex;
-   align-items: center;
-   gap: 64px;
-}
-
-#search-navbar {
-   display: flex;
-   padding: 6px 16px 6px 168px;
-   align-items: flex-start;
-   border-radius: 24px;
-   background: var(--White, #FFF);
-   width: 20px;
-   height: 25px;
-}
-
-#search-navbar img {
-   display: flex;
-   width: 20px;
-   height: 20px;
-   justify-content: center;
-   align-items: center;
-}
-
-#media-header ul {
-   display: flex;
-   align-items: flex-start;
-   gap: 32px;
-}
-
-#media-header li {
-   list-style: none;
-}
-
-#media-header img {
-   display: flex;
-   width: 20px;
-   height: 20px;
-   justify-content: center;
-   align-items: center;
-   color: #12F7D6;
-}
-
-#line-header {
-   color: #43454D;
-   width: 1230px;
-}
-
 /*Hero Section Styling*/
 .hero-section {
    display: flex;
+   width: 83.15%;
    padding: 64px 128px 128px 128px;
    justify-content: center;
    align-items: flex-start;
    align-self: stretch;
-   background: var(--BG-1, #292F36);
 }
 
 .navigation-bar {
@@ -191,7 +69,8 @@ body {
 
 #bg-text {
    display: flex;
-   width: 1024px;
+   /* width: 1024px; */
+   width: 100%;
    height: auto;
    justify-content: center;
    align-items: center;
@@ -200,8 +79,8 @@ body {
 #bg-text h1 {
    color: var(--Brand-2, #98FAEC);
    font-size: 70px;
-   font-style: normal;
-   padding: 0px 55px 0px 55px;
+   /* font-style: normal;
+   padding: 0px 55px 0px 55px; */
    font-weight: 400;
    line-height: 134px;
    text-transform: capitalize;
@@ -213,7 +92,7 @@ body {
    justify-content: center;
    align-items: center;
    align-content: center;
-   gap: 64px 128px;
+   gap: 64px 32px;
    align-self: stretch;
    flex-wrap: wrap;
 
@@ -379,7 +258,7 @@ input[type="button"] {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   gap: 5px;
+   gap: 10px;
    align-self: stretch;
 }
 
@@ -391,13 +270,12 @@ input[type="button"] {
    align-self: stretch;
 }
 
-#p,
-#id5 {
+#p {
    color: var(--Brand-2, #98FAEC);
    font-size: 14px;
    font-style: normal;
    font-weight: 400;
-   line-height: 18px;
+   line-height: 10px;
 }
 
 .main-hero-title {
@@ -430,12 +308,6 @@ input[type="button"] {
    font-weight: 400;
    line-height: 72px;
    text-transform: capitalize;
-}
-
-#id6 {
-   display: flex;
-   align-items: baseline;
-   gap: 16px;
 }
 
 .hero-paragraph {
@@ -539,19 +411,6 @@ input[type="button"] {
 }
 
 /*About Me Section Styling*/
-/* 
-.about-me-section {
-   display: flex;
-   padding: 128px;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 128px;
-   align-self: stretch;
-   background: url("/brand-images/about-me-background.jpg"), center /cover no-repeat, #484343;
-   background: url("/brand-images/about-me-background.jpg"), lightgray 50% / cover no-repeat, #1A1E23;
-} */
-
 .about-me-section {
    position: relative;
    display: flex;
@@ -564,7 +423,7 @@ input[type="button"] {
    background: url("/brand-images/about-me-background.jpg"), center/cover no-repeat;
    background-color: rgba(0, 0, 0, 1);
    color: #fff;
-   z-index: 1;
+   z-index: -1;
 }
 
 .about-me-section::before {
@@ -752,16 +611,6 @@ a {
 
 
 /* Skills Section Styling*/
-/* .skills-section {
-   display: flex;
-   padding: 128px;
-   flex-direction: column;
-   align-items: center;
-   gap: -248px;
-   align-self: stretch;
-   background: url("/brand-images/skills-image.png"), 0.5% / cover no-repeat, #101113;
-} */
-
 .skills-section {
    position: relative;
    display: flex;
@@ -774,7 +623,7 @@ a {
    background: url("/brand-images/skills-image.png"), center/cover no-repeat;
    background-color: rgba(0, 0, 0, 1);
    color: #fff;
-   z-index: 1;
+   z-index: -1;
 }
 
 .skills-section::before {
@@ -1169,32 +1018,6 @@ a {
    flex-shrink: 0;
 }
 
-/* #view-website {
-   display: inline-flex;
-   align-items: flex-end;
-   gap: 8px;
-}
-
-#view-website h3 {
-   color: var(--Brand-1, #12F7D6);
-
-   font-family: "IBM Plex Mono";
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 32px;
-   text-transform: capitalize;
-}
-
-#view-website img {
-   display: flex;
-   width: 16px;
-   height: 16px;
-   justify-content: center;
-   align-items: center;
-} */
-
-
 /* Blogs Section Styling */
 .blogs-section {
    display: flex;
@@ -1458,11 +1281,15 @@ a {
 
 .contact-me-content h1 {
    color: var(--Brand-1, #12F7D6);
-   font-size: 64px;
+   font-size: 40px;
    font-style: normal;
    font-weight: 400;
    line-height: 112.5%;
    text-transform: capitalize;
+}
+
+.contact-me-content img {
+   width: 100%;
 }
 
 .contact-me-content p {
@@ -1471,7 +1298,7 @@ a {
    font-size: 16px;
    font-style: normal;
    font-weight: 400;
-   line-height: 125%;
+   line-height: 112.5%;
    text-transform: capitalize;
 }
 
@@ -1491,14 +1318,6 @@ a {
    border-radius: 32px 0px;
    border: 2px solid var(--Brand-1, #12F7D6);
 }
-
-/* .contact-sheet {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 64px;
-   align-self: stretch;
-} */
 
 #contact-title h1 {
    color: var(--Brand-1, #12F7D6);
@@ -1594,15 +1413,6 @@ a {
    cursor: pointer;
 }
 
-/* 
-.contact-me-button img {
-   display: flex;
-   padding: 16px 32px;
-   justify-content: center;
-   align-items: center;
-   gap: 16px;
-} */
-
 .contact-me-button h2 {
    color: var(--BG-1, #292F36);
    font-size: 30px;
@@ -1620,40 +1430,105 @@ a {
 
 
 
-.footer-container {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   gap: 16px;
-   align-self: stretch;
-   color: var(--White, #FFF);
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 300;
-   line-height: 18px;
-}
+/* Media queries for mobile devices */
+@media only screen and (max-width: 768px) {
+   body {
+      width: 100%;
 
-.footer {
-   display: flex;
-   padding: 0px 128px 64px 128px;
-   justify-content: space-between;
-   align-items: center;
-   align-self: stretch;
-}
+   }
 
-#policy {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 32px;
-}
+   /* Header Section Styling*/
+   .brand-heading {
+      padding: 0px 24px;
+   }
 
-#designed-by {
-   display: flex;
-   flex-direction: row;
-   gap: 5px;
-}
+   .header-container {
+      padding: 24px 0px;
+   }
 
-#designed-by a {
-   color: #12F7D6;
+   #brand-logo {
+      gap: 2px;
+   }
+
+   #brand-logo h1 {
+      font-size: 16px;
+   }
+
+   #brand-logo h2 {
+      font-size: 13px;
+   }
+
+   .navbar-header {
+      gap: 16px;
+   }
+
+   #header-line {
+      width: 100%;
+   }
+
+   #search-navbar,
+   #media-header,
+   .navigation-bar,
+   #bg-text {
+      display: none;
+   }
+
+   #brand-logo img,
+   #search-navbar img,
+   #media-header img,
+   #profile-picture img,
+   #works-1 img,
+   #works-2 img,
+   #img-blog img {
+      max-width: 100%;
+   }
+
+   /* Hero Section Styling */
+   .hero-section {
+      padding: 0px 24px;
+   }
+
+   .hero-container {
+      gap: 64px;
+   }
+
+   .hero-message-container-left {
+      width: 100%;
+      height: auto;
+   }
+
+
+   .hero-message-container-right {
+      width: 100%;
+      height: auto;
+   }
+
+   .main-hero-title {
+      width: 100%;
+      height: auto;
+   }
+
+   #main-para {
+      width: 100%;
+      height: auto;
+   }
+
+
+   #id1,
+   #id2,
+   #id3,
+   #id4 {
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+   }
+
+   /*About Me Section Sytling*/
+   .about-me-container {
+      width: 90%;
+      height: auto;
+   }
+
+
 }
