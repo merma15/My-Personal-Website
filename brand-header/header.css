@@ -5,6 +5,11 @@
    padding: 0;
 }
 
+body {
+
+   font-family: ubuntu, sans-serif;
+}
+
 .brand-heading {
    display: flex;
    padding: 0px 128px;

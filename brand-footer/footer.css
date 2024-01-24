@@ -5,13 +5,19 @@
    padding: 0;
 }
 
-.footer-section {
+body {
+
    background-color: #1A1E23;
+   font-family: ubuntu, sans-serif;
+}
+
+.footer-section {
    color: var(--White, #FFF);
    font-size: 20px;
    font-style: normal;
    font-weight: 300;
    line-height: 18px;
+   height: auto;
 }
 
 .footer {
@@ -25,6 +31,7 @@
    justify-content: space-between;
    align-items: center;
    align-self: stretch;
+   height: auto;
 }
 
 #media-footer ul {
