@@ -13,7 +13,7 @@ body {
 
 .blogs-section {
    display: flex;
-   padding: 128px;
+   padding: 200px 128px;
    flex-direction: column;
    justify-content: center;
    align-items: center;
