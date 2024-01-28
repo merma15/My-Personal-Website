@@ -21,11 +21,65 @@
 </head>
 
 <body>
-   <!-- This Line will try to add the header file to this Home Page -->
-   <header><iframe src="/brand-header/header.html" frameborder="0"></iframe></header>
-   <!--Hero Section-->
-   <section class="hero-section">
+   <!-- Header Section Added -->
 
+   <header class="brand-heading">
+      <div class="header-container">
+         <div id="brand-logo">
+            <h1>
+               <a href="/brand-home/home-page.html" target="_blank" rel="noopener noreferrer">
+                  <img src="/brand-images/My-Icon-2.png" alt="My Personal Brand Logo">
+               </a>
+            </h1>
+            <h2>
+               <a href="/brand-home/home-page.html" target="_blank" rel="noopener noreferrer">
+                  N. Martin
+               </a>
+            </h2>
+         </div>
+         <div class="navbar-header">
+            <div id="left-navbar">
+               <ul>
+                  <li><a href="/brand-home/home-page.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+                  <li><a href="/brand-blogs/blogs.html" target="_blank" rel="noopener noreferrer">Blogs</a></li>
+               </ul>
+            </div>
+            <div id="right-navbar">
+               <div id="search-navbar">
+                  <img src="/brand-icons/search-icon.svg" alt="">
+               </div>
+               <div id="media-header">
+                  <ul>
+                     <li>
+                        <a href="https://" target="_blank" rel="noopener noreferrer">
+                           <img src="/brand-icons/telegram-icon.svg" alt="Telegram">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://" target="_blank" rel="noopener noreferrer">
+                           <img src="/brand-icons/discord.svg" alt="Discord">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://" target="_blank" rel="noopener noreferrer">
+                           <img src="/brand-icons/icon-instagram.svg" alt="Instagram">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://" target="_blank" rel="noopener noreferrer">
+                           <img src="/brand-icons/github.svg" alt="Github">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="line-header">
+         <hr>
+      </div>
+   </header>
+   <section class="hero-section">
       <div class="navigation-bar">
          <ul>
             <li id="defualt">
@@ -164,14 +218,6 @@
    <!--About Me Secction-->
    <section class="about-me-section">
       <div class="about-me-module">
-         <!-- <div id="scroll-arrows">
-            <div id="arrows">
-               <p id="id11"><img src="/brand-icons/Vector-1.svg" alt=""></p>
-               <p id="id12"><img src="/brand-icons/Vector-2.svg" alt=""></p>
-            </div>
-            <p id="id13"><img src="/brand-icons/Arrow 1.svg" alt=""></p>
-         </div>
-      </div> -->
          <div class="about-me-container">
             <div class="about-me-content">
                <div id="title-about-me">
@@ -232,15 +278,7 @@
       <div class="skills-container">
          <div class="skills-module">
             <div id="scroll-arrows">
-               <!-- <div id="arrows">
-                  <div id="id12">
-                     <img src="/brand-icons/Vector-1.svg" alt=""></p>
-                     <p id="id11">
-                        <img src="/brand-icons/Vector-2.svg" alt="">
-                     </p>
-                  </div>
-                  <p id="id13"><img src="/brand-icons/Arrow 1.svg" alt=""></p>
-               </div> -->
+               <!-- To add Scroll Arrows -->
                <div id="skills-me">
                   <h1>&lt;/&gt;</h1>
                </div>
@@ -304,13 +342,7 @@
    <!-- Works Section -->
    <section class="works-section">
       <div class="works-module">
-         <!-- <div id="scroll-arrows">
-            <div id="arrows">
-               <p id="id11"><img src="/brand-icons/Vector-1.svg" alt=""></p>
-               <p id="id12"><img src="/brand-icons/Vector-2.svg" alt=""></p>
-               <p id="id13"><img src="/brand-icons/Arrow 1.svg" alt=""></p>
-            </div>
-         </div> -->
+         <!-- To Add Scroll Arrows -->
          <div class="works-content">
             <div>
                <h1>Works</h1>
@@ -326,8 +358,8 @@
                   alt=""></a>
          </div>
          <div id="works-1">
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="/brand-images/analytics-1.png"
-                  alt=""></a>
+            <div><a href="http://" target="_blank" rel="noopener noreferrer"><img src="/brand-images/analytics-1.png"
+                     alt=""></a></div>
             <p id="works-1-title">Data Analytics To Extract Useful Information of Your Business In seems to be Unuseful
                Data.
             </p>
@@ -358,13 +390,7 @@
    <!-- Blogs Section -->
    <section class="blogs-section">
       <div class="blogs-module">
-         <!-- <div id="scroll-arrows">
-            <div id="arrows">
-               <p id="id11"><img src="/brand-icons/Vector-1.svg" alt=""></p>
-               <p id="id12"><img src="/brand-icons/Vector-2.svg" alt=""></p>
-               <p id="id13"><img src="/brand-icons/Arrow 1.svg" alt=""></p>
-            </div>
-         </div> -->
+         <!-- To Add Scroll Arrows -->
          <div class="blogs-content">
             <div>
                <h1>Blogs</h1>
@@ -387,7 +413,8 @@
                   skills
                   like Better Understanding of Math and Statistics, Programming Langauges like Python and R.</p>
                <div id="read-more">
-                  <h2><a href="/sin" target="_blank" rel="noopener noreferrer">Read More<span> >></span></a></h2>
+                  <h2><a href="/brand-single-blog/single-blog.html" target="_blank" rel="noopener noreferrer">Read
+                        More<span> >></span></a></h2>
                   <hr>
                </div>
                <div id="author-info">
@@ -416,16 +443,9 @@
    <section class="contact-me-section">
       <div class="contact-me-container">
          <div class="contact-me-module">
-            <!-- <div id="scroll-arrows">
-               <div id="arrows">
-                  <p id="id11"><img src="/brand-icons/Vector-1.svg" alt=""></p>
-                  <p id="id12"><img src="/brand-icons/Vector-2.svg" alt=""></p>
-                  <p id="id13"><img src="/brand-icons/Arrow 1.svg" alt=""></p>
-               </div>
-            </div> -->
+            <!-- To Add Scroll Arrows -->
             <div class="contact-me-content">
                <div>
-
                   <h1>Contact Me</h1>
                   <img src="/brand-icons/Line 22.svg" alt="">
                </div>
@@ -474,7 +494,50 @@
          <hr>
       </div>
    </section>
-   <iframe src="/brand-footer/footer.html" frameborder="0" style="width: 100%;"></iframe>
+
+   <!-- Footer Section Added -->
+   <section class="footer-section">
+      <div class="footer">
+         <div id="right-reserved">
+            <p>&copy;2024 N. Martin. All rights reserved.</p>
+         </div>
+         <div id="policy">
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+         </div>
+         <div id="media-footer">
+            <ul>
+               <li>
+                  <a href="https://" target="_blank" rel="noopener noreferrer">
+                     <img src="/brand-icons/telegram-icon.svg" alt="Telegram">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://" target="_blank" rel="noopener noreferrer">
+                     <img src="/brand-icons/discord.svg" alt="Discord">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://" target="_blank" rel="noopener noreferrer">
+                     <img src="/brand-icons/icon-instagram.svg" alt="Instagram">
+                  </a>
+               </li>
+               <li>
+                  <a href="https://" target="_blank" rel="noopener noreferrer">
+                     <img src="/brand-icons/github.svg" alt="Github">
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div id="designed-by">
+            <p>Designed By</p>
+            <a href="https://www.instagram.com/mugabotech_businessgrp" target="_blank" rel="noopener noreferrer">
+               <h1>Mugabo Tech Business Grp</h1>
+            </a>
+         </div>
+      </div>
+   </section>
+
 </body>
 
 </html>
